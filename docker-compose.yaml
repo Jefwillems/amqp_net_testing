@@ -1,0 +1,16 @@
+version: '2'
+services:
+  artemis:
+    image: quay.io/artemiscloud/activemq-artemis-broker
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+      - "5672:5672"
+    environment:
+      AMQ_USER: artemisuser
+      AMQ_PASSWORD: artemispassword
+      AMQ_RESET_CONFIG: "true"
+    volumes:
+      - ./artemisvol/:/opt/custom/
+    entrypoint: sh -c "/opt/custom/launch.sh"
+

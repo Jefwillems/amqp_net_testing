@@ -1,2 +1,6 @@
 bin/
 obj/
+nuget.config
+.idea
+.vscode
+*.DotSettings.user

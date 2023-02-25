@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="Apache.NMS.AMQP">
+        <HintPath>..\..\..\activemq-nms-amqp\src\NMS.AMQP\bin\Debug\netstandard2.0\Apache.NMS.AMQP.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <!-- AMQPNetLite.Core is .NET Standard 1.3 package -->
+        <PackageReference Include="AMQPNetLite.Core" Version="2.4.3" />
+        <PackageReference Include="Apache.NMS" Version="2.0.0" />
+        <PackageReference Include="System.Threading.Tasks.Dataflow" Version="4.9.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <!-- Add PackageReference specific for your source control provider (see below) -->
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    </ItemGroup>
+</Project>
