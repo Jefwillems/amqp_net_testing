@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingLib.Nuget", "Messa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingLib.Lite", "MessagingLib.Lite\MessagingLib.Lite.csproj", "{DB745C67-DA0F-476A-BD4C-46B293B58C02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.Amqp", "Messaging.Amqp\Messaging.Amqp.csproj", "{6B4883F6-C892-484B-8592-8853D2CDACC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{DB745C67-DA0F-476A-BD4C-46B293B58C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB745C67-DA0F-476A-BD4C-46B293B58C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB745C67-DA0F-476A-BD4C-46B293B58C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B4883F6-C892-484B-8592-8853D2CDACC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B4883F6-C892-484B-8592-8853D2CDACC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B4883F6-C892-484B-8592-8853D2CDACC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B4883F6-C892-484B-8592-8853D2CDACC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
